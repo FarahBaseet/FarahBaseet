@@ -1,6 +1,5 @@
 ## Hi there 👋
 
-
 ![Typing SVG](https://demolab.com!+👋;I'm+a+Full+Stack+Developer;Welcome+to+my+profile!)
 
 <!--
