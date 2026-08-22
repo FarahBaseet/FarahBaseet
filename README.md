@@ -1,7 +1,7 @@
 ## Hi there 👋
 
 
-[![Typing SVG](https://demolab.com!+👋;I'm+a+Full+Stack+Developer;Welcome+to+my+profile!)](https://git.io)
+![Typing SVG](https://demolab.com!+👋;I'm+a+Full+Stack+Developer;Welcome+to+my+profile!)
 
 <!--
 **FarahBaseet/FarahBaseet** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
