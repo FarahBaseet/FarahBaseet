@@ -1,6 +1,6 @@
 ## Hi there 👋
 
-![Typing SVG](https://demolab.com!+👋;I'm+a+Full+Stack+Developer;Welcome+to+my+profile!)
+<img src="https://i.pinimg.com/originals/ca/90/1c/ca901cc2f63f58a11e60adeeb38c6d5b.gif" />
 
 <!--
 **FarahBaseet/FarahBaseet** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
