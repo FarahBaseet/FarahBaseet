@@ -1,7 +1,6 @@
 ## Hi there 👋
 <p align="center"
 <img src="https://i.pinimg.com/originals/ca/90/1c/ca901cc2f63f58a11e60adeeb38c6d5b.gif" />
-  A little quiet around here.
 </p>
 <!--
 **FarahBaseet/FarahBaseet** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
