@@ -1,3 +1,10 @@
+let lillypadsX  = [];
+let lillypadsY  = [];
+let lillypadsSize = [];
+let lillypadsRot =  [];
+let lillypadsArc = [];
+let l;
+
 let puddlesY = [];
 let puddlesX = [];
 let puddlesD = [];
@@ -6,17 +13,24 @@ let puddleOpacity = [];
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-
+  l = random(3, 8);
+  for(let i = 0; i<l; i++){
+    lillypadsX[i] = random(windowWidth);
+    lillypadsY[i] = random(windowHeight);
+    lillypadsSize[i] = random(windowHeight/6, windowHeight/2);
+    lillypadsRot[i] = random(2*PI);
+    lillypadsArc[i] = random(PI + (PI*3/4), 2*PI);
+  }
 }
 
 function draw() {
+
   let blue = (sin(frameCount * (1/200))*25) + 70;
   background(23, blue, 117);
   //push();
   //fill((33, map(50, 35, 100, 85), 117));
   //ellipse();
   //pop();
-  
   
   for(let i = 0; i <puddles; i++){
     if (puddleOpacity[i] <= 0){
@@ -36,13 +50,18 @@ function draw() {
   }
   }
 
-  push();
-  fill(40, 97, 22);
-  noStroke();
-  translate(windowWidth/4, windowHeight/2);
-  rotate(-PI/3);
-  arc(0,  0, windowHeight/2, windowHeight/2, 0, PI + (PI*6/7));
-  pop();
+  
+  for(let i = 0; i<l; i++){
+        push();
+        fill(40, 97, 22);
+        noStroke();
+        translate(lillypadsX[i], lillypadsY[i]);
+        rotate(lillypadsRot[i]);
+        arc(0,  0, lillypadsSize[i], lillypadsSize[i], 0, lillypadsArc[i]);
+        pop();
+  }
+  
+
 }
 
 function windowResized() {
