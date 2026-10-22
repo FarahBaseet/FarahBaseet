@@ -9,7 +9,13 @@ function setup() {
 }
 
 function draw() {
-  background("#173a75");
+  let blue = (sin(frameCount * (1/200))*25) + 70;
+  background(23, blue, 117);
+  //push();
+  //fill((33, map(50, 35, 100, 85), 117));
+  //ellipse();
+  //pop();
+  
   
   for(let i = 0; i <puddles; i++){
     if (puddleOpacity[i] <= 0){
@@ -19,15 +25,17 @@ function draw() {
          puddleOpacity.splice(i, 1);
          puddles--;
   } else{
-    stroke(107, 143, 205, puddleOpacity[i]);
+    //stroke(107, 143, 205, puddleOpacity[i]);
+    stroke(23+80, blue+80, 117+80, puddleOpacity[i]);
+
     noFill();
     ellipse(puddlesX[i], puddlesY[i], puddlesD[i]);
     puddlesD[i]++;
-    puddleOpacity[i] -= random(1, 2);
-
+    puddleOpacity[i] -= random(.25, 1.5);
+  }
   }
 
-  }
+  
 }
 
 function windowResized() {
