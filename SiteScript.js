@@ -6,6 +6,7 @@ let puddleOpacity = [];
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+
 }
 
 function draw() {
@@ -31,11 +32,17 @@ function draw() {
     noFill();
     ellipse(puddlesX[i], puddlesY[i], puddlesD[i]);
     puddlesD[i]++;
-    puddleOpacity[i] -= random(.25, 1.5);
+    puddleOpacity[i] -= random(.7, 1.5);
   }
   }
 
-  
+  push();
+  fill(40, 97, 22);
+  noStroke();
+  translate(windowWidth/4, windowHeight/2);
+  rotate(-PI/3);
+  arc(0,  0, windowHeight/2, windowHeight/2, 0, PI + (PI*6/7));
+  pop();
 }
 
 function windowResized() {
