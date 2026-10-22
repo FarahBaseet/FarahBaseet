@@ -4,6 +4,7 @@ let lillypadsSize = [];
 let lillypadsRot =  [];
 let lillypadsArc = [];
 let l;
+let lillypadGreen = [];
 
 let puddlesY = [];
 let puddlesX = [];
@@ -20,6 +21,7 @@ function setup() {
     lillypadsSize[i] = random(windowHeight/6, windowHeight/2);
     lillypadsRot[i] = random(2*PI);
     lillypadsArc[i] = random(PI + (PI*3/4), 2*PI);
+    lillypadGreen[i] = random(25, 60);
   }
 }
 
@@ -53,7 +55,7 @@ function draw() {
   
   for(let i = 0; i<l; i++){
         push();
-        fill(40, 97, 22);
+        fill(lillypadGreen[i], 97, 22);
         noStroke();
         translate(lillypadsX[i], lillypadsY[i]);
         rotate(lillypadsRot[i]);
