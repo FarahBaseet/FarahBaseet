@@ -1,23 +1,28 @@
-<!-- ## Hi there 👋 -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/FarahBaseet/FarahBaseet/main/dist/pet.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/FarahBaseet/FarahBaseet/main/dist/pet-light.svg">
+  <img alt="my github pet" src="https://raw.githubusercontent.com/FarahBaseet/FarahBaseet/main/dist/pet.svg" width="100%">
+</picture>
 
+A personal portfolio built with React, Vite, and custom CSS. It is a static site
+with no backend and can be deployed to GitHub Pages.
 
-<!--
-**FarahBaseet/FarahBaseet** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Run locally
 
-Here are some ideas to get you started:
+```sh
+npm ci
+npm run dev
+```
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+Create a production build with `npm run build`; preview it locally with
+`npm run preview`. The static output is written to `dist/`.
 
-<center>
-  <img src="https://i.pinimg.com/originals/ca/90/1c/ca901cc2f63f58a11e60adeeb38c6d5b.gif" />
-  
-  A little quiet around here.
-</center>
--->
+## GitHub Pages
+
+The workflow in `.github/workflows/deploy.yml` builds and deploys the site when
+changes are pushed to `main`. In the repository settings, set **Pages → Build
+and deployment → Source** to **GitHub Actions**.
+
+Vite uses relative asset paths so the same build works at a project-page URL or
+a custom domain. Update the bio, project details, and links in `src/App.jsx`.
+
